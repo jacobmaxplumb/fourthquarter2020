@@ -57,7 +57,7 @@ const dealership = [
 ];
 
 function findCars(arrayOfCars, model) {
-    return arrayOfCars.filter((car) => car.model === model);
+    return arrayOfCars.filter(car => car.model === model);
 }
 
 function addCar(arrayOfCars, make, model, hybrid, cost) {
