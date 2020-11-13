@@ -121,9 +121,10 @@
 function doSomething(one, two) {
     console.log(one);
     console.log(two);
+    // return undefined;
 }
 
-//doSomething(1, 'word');
+doSomething(1, 'word');
 
-const doSomethingResult = doSomething('first param', 'word');
+const doSomethingResult = doSomething('first param', 'word'); //undefined
 console.log(doSomethingResult);
