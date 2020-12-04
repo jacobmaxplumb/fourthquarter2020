@@ -22,6 +22,8 @@ function translate(word) {
     return wordArray.join('') + firstLetter + 'ay';
 }
 
+console.log('word');
+
 // module.exports = {
 //     translate,
 //     translateWord
