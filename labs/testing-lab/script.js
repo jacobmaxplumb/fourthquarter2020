@@ -24,7 +24,7 @@ function translate(word) {
 
 console.log('word');
 
-// module.exports = {
-//     translate,
-//     translateWord
-// }
+module.exports = {
+    translate,
+    translateWord
+}
