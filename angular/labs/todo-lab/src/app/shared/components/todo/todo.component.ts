@@ -14,13 +14,39 @@ export class TodoComponent implements OnInit {
     {completed: true, task: 'wake up'}
   ];
 
+  filteredTodos: Todo[] = [];
+
+  taskName: string = '';
+  filterValue: string = '';
+
   constructor() { }
 
   ngOnInit() {
+    this.filteredTodos = this.todos;
+  }
+
+  filterTodos(): void {
+    console.log('hit');
+    console.log(this.filterValue)
+    this.filteredTodos = this.todos.filter(todo => todo.task.includes(this.filterValue));
   }
 
   completeClicked(todoItem: Todo) {
     todoItem.completed = true;
+  }
+
+  deleteTodo(i: number): void {
+    this.todos.splice(i, 1);
+    this.filteredTodos = this.todos;
+    this.filterValue = '';
+  }
+
+  addTodo() {
+    const todoItem: Todo = {
+      task: this.taskName,
+      completed: false
+    }
+    this.todos.push(todoItem);
   }
 
 }

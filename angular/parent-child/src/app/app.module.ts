@@ -3,19 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoComponent } from './shared/components/todo/todo.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { ChildTwoComponent } from './child-two/child-two.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    ParentComponent,
+    ChildComponent,
+    ChildTwoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
