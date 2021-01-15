@@ -9,7 +9,7 @@ export class PostService {
   posts: Post[] = [
     {title: 'test', thought: 'test thought'}
   ]
-
+  
   showPostForm: boolean = false;
 
   constructor() { }
